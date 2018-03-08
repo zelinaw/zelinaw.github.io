@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        My first HTML CSS page.
+    </title>
+    <style>
+    h1{
+    color:white;
+    transition:0.75s;
+    }
+    h1:hover{
+        letter-spacing:3px;
+        color:black;
+    }
+    body{
+        font-family: 'Montserrat';
+        letter-spacing:1px;
+        padding-left:100px;
+        padding-right:100px;
+        font-size:18px;
+        color:white;
+        background-image: url(background.jpg);
+    }
+    img{
+        height:200px;
+        width:175px;
+        margin-right:50px;
+        transition:0.5s;
+    }
+    img:hover{
+        height:205px;
+        width:180px;
+        opacity:0.75;
+    }
+    #important a{
+        font-weight: bold;
+        color:white;
+        text-decoration: none;
+    }
+    a:visited{
+        color:white;
+    }
+    h2{
+        text-decoration: underline;
+    }
+    td,th{
+        width:50%;
+        padding:20px;
+    }
+    .table_1 td:hover{
+        background-color:#bcbfc4;
+        transition:0.75s;
+    }
+    
+    .back{
+        padding:15px;
+        background-color: RGBA(0,0,0,0.7);
+        border-radius:15px;
+    }
+    input{
+        width:150px;
+        height:20px;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1 style='text-align:center;'>Welcome to ACM's Web Development Workshop.</h1>
+    <hr style='width:50%'>
+    <div class='back'>
+        <center>
+            <p class='content'>
+                We shall be going through a 2 day intensive web development course covering 
+                <span id='important'><a href='https://html.com/'>HTML</a>,<a href='https://www.tutorialspoint.com/css/index.htm'> CSS </a>and a framework called<a href='https://getbootstrap.com/'> Bootstrap </a>.</span>
+                We shall begin our learning with HTML 5. This is the latest functional increment in the HTML. 
+                The goal of HTML is to reduce the amount of scripting 
+                required in a webpage by introducing most of the functionalities in terms of tags.<br>
+                Then we move on to CSS which is a language that works with HTML. It describes the 
+                style of the HTML webpage. Then we'll move on to BootStrap which is a framework for web development 
+                based on HTML and CSS classes. 
+            </p>
+        </center>
+        <hr style='width:50%'>
+        <center>
+            <span>
+                <img src='logo_html.png'>
+            </span>
+            <span>
+                <img src='logo_css.png'>
+            </span>
+                <span>
+                    <img src='logo_bootstrap.png'>
+                </span>
+            </center>
+            <br>
+            <h2>
+                Requirements for the workshop.
+            </h2>
+            <ul style='list-style-type:circle'>
+                <li>Internet Connection.</li>
+                <li>Internet Browser.(Any one)</li>
+                <ol type="1">
+                    <li>Google Chrome</li>
+                    <li>Safari</li>
+                    <li>Opera</li>
+                    <li>Internet Explorer/Edge<span id='danger'>(Really?)</span></li>
+                </ol>
+                <li>A text editor(To write the code)</li>
+                <ol type="a">
+                    <li>Visual Studio Code(Faster for windows)</li>
+                    <li>Sublime Text</li>
+                    <li>Atom</li>
+                    <li>Notepad++</li>
+                </ol>
+            </ul>
+            <h2>To learn HTML and CSS we need to know the difference between them first.</h2>
+            <table border='1' class='table_1'>
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                </tr>
+                <tr>
+                    <td><b>HYPER TEXT MARKUP LANGUAGE</b></td>
+                    <td><b>CASCADING STYLE SHEETS</b></td>
+                </tr>
+                <tr>
+                    <td>Displays <b>content & structure</b> of the web page.</td>
+                    <td>Modifies <b>design & display</b> of HTML element</td>
+                </tr>
+                <tr>
+                    <td>HTML consists of <u>tags</u>.</td>
+                    <td>CSS consists of <u>selectors</u> followed by a <u>declaration block</u></td>
+                </tr>
+                <tr>
+                    <td>HTML is the main file calling CSS files.</td>
+                    <td>CSS is written in line OR under style tag in the html file or written externally.</td>
+                </tr>
+            </table>
+            <br>
+            <hr width='75%'>
+            <center>
+                <h3>Please enter your contact details.</h3>
+                <form>
+                <table>
+                    <tr>
+                        <td>Full Name:</td>
+                        <td><input type='text' name='name' required></td>
+                    </tr>
+                    <tr>
+                        <td>Year: </td>
+                        <td>
+                            <select>
+                                <option value='fy'>First Year</option>
+                                <option value='sy'>Second Year</option>
+                                <option value='ty'>Third Year</option>
+                                <option value='foy'>Fourth Year</option>
+                                <option value='fiy'>Fifth Year</option>
+                            </select>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email-ID</td>
+                        <td><input type='email' name='mail'></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number: </td>
+                        <td><input type='tel' name='pno' required></td>
+                    </tr>
+                    <tr>
+                        <td>Date Of Birth:</td>
+                        <td><input type='date' name='dob' required></td>
+                    </tr>
+                    <tr>
+                        <td><input type='submit' value='Submit'></td>
+                        <td><input type='reset' value='Reset'></td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </div>
+</body>
+</html>
